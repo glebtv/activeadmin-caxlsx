@@ -8,7 +8,7 @@ require 'rails'
 ENV['RAILS_ROOT'] = File.expand_path("../rails/rails-#{Rails::VERSION::STRING}", __FILE__)
 
 # ensure testing application is in place
-unless File.exists?(ENV['RAILS_ROOT'])
+unless File.exist?(ENV['RAILS_ROOT'])
   puts "Please run bundle exec rake setup before running the specs."
   exit
 end
